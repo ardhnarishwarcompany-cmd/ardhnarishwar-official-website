@@ -1,0 +1,31 @@
+{
+  "name": "ardhnarishwar-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Ardhnarishwar Global Business Solutions company website (services, blog, media, contact, admin CMS)",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/seed.js",
+    "seed:platform": "node src/seedPlatform.js",
+    "seed:superadmin": "node src/seedSuperAdmin.js",
+    "migrate:org": "node src/migrateOrgColumns.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.10.0",
+    "nodemailer": "^10.0.3",
+    "sequelize": "^6.37.3",
+    "slugify": "^1.6.6",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
